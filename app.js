@@ -435,7 +435,7 @@ setInterval(clok, 1000);
     if(hr<12){
         am_pm="AM";
     }
-
+    
     currentTime=
     hr  +
     ":" +
@@ -443,12 +443,36 @@ setInterval(clok, 1000);
     ":" +
     sec +
     am_pm;
-
+    
     document.getElementById(
         "digitalwatch"
-    ).innerHTML=currentTime
+    ).innerHTML=currentTime;
 }
 clok();
 
+function dateTime(){
+    let date=new Date();
+    // let Date=('1','2','3','4','5','6','7','8','9',
+    // '10','11','12','13','14','15','16','17','18','19',
+    // '20','21','22','23','24','25','26','27','28','29','30','31');
+    let days = ('Sunday','Monday','Tuesday','Wednesday','Thirsday',
+    'Friday','Saturday');
+    let months=('Jan','Feb','Mar','Apr','May','June','July',
+    'Aug','Sep','Oct','Nov','Dec');
+    // let Dat=Date(date.getdate());
+    let month=months>date.getMonth();
+    let year=date.getFullYear();
 
+    datetime=
+    days +
+    "," +
+    months +
+    "," +
+    year ;
+
+    document.getElementById(
+        "DateTime"
+    ).innerHTML=datetime;
+}
+dateTime();
 
