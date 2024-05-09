@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+#digitalwatch{
+    font-size: 10vh;
+    display: flex;
+    justify-content: center;
+    border:3vh solid white;
+    background-color: rgb(241, 241, 247);
+    border-radius: 0.3em;
+    color: rgb(42, 8, 8);
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .first{
+        font-size: 2em;
+        color: purple;
+    }
+    .second{
+        font-size:2rem;
+        color: purple;
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+  
+  .first{
+      font-size: 2em;
+      color: blue;
+  }
+  .second{
+      font-size: 2rem;
+      color: blue;
+  }
+
+}}
+
+#digitalwatch:hover{
+    background-color: rgb(220, 220, 233);
+}
+
+#DateTime{
+    font-size: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.div1{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color:rgb(35, 231, 35);
+
+}
+</style>
+<div class="div1"><h1>Made by Syeed AwaiS!</h1></div>
+        <div id="digitalwatch"></div>
+        <div id="DateTime"></div>
+        
+</body>
+<script src="app.js"></script>
+</html>
